@@ -7,6 +7,58 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Canvas x:Name="mijnCanvas">
+            <Canvas.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="Red" Offset="1"/>
+                </LinearGradientBrush>
+            </Canvas.Background>
+            <Rectangle Height="153" Canvas.Left="51" Stroke="Black" Canvas.Top="74" Width="313">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FFFFC500" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Button x:Name = "button" Content="Knop 1" Canvas.Left="425" Canvas.Top="74" Width="75" Click="Knop1_Click" RenderTransformOrigin="0.565,-0.534" Height="28" Foreground="#FFFFFF07" Background="{x:Null}" BorderBrush="{x:Null}"/>
+            <Button x:Name="Knop2" Content="Knop 2" Canvas.Left="425" Canvas.Top="129" Width="75" MouseEnter="Knop2_MouseEnter" Height="34" Background="{x:Null}" Foreground="#FFFFFF07" BorderBrush="{x:Null}"/>
+            <Button x:Name="Knop3" Content="Knop 3" Canvas.Left="425" Canvas.Top="194" Width="75" BorderBrush="{x:Null}" OpacityMask="Black" Height="33" Background="{x:Null}" Foreground="#FFFFFF07" Click="Knop3_Click"/>
+            <Ellipse Height="75" Canvas.Left="162" Canvas.Top="117" Width="80" RenderTransformOrigin="0.498,0.524">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FFFFC500" Offset="1"/>
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Rectangle x:Name="mijnRechthoek"   Height="30" Canvas.Left="172" Stroke="Black" Canvas.Top="198" Width="59" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180.461"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FFFFC500" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Button x:Name="Knop4" Content="Knop 4" Height="27" Canvas.Left="425" Canvas.Top="256" Width="75" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFFFE800"/>
+
+        </Canvas>
     </Grid>
 </Window>
